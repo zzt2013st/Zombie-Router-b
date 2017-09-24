@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+
+<script type="text/javascript">
+	var data = null;
+
+	var xhr = new XMLHttpRequest();
+	xhr.withCredentials = true;
+
+	xhr.open("GET", "https://api.telnyx.com/origination/numbers/673444153257886919");
+	xhr.setRequestHeader("x-api-user", "PDcczTxfJyD8HwYdJzAYy4ya");
+	xhr.setRequestHeader("x-api-token", "EzKUrkYMJjM34CeMchrDh71T");
+	xhr.setRequestHeader("cache-control", "no-cache");
+	
+	xhr.send(data);
+
+
+
+	xhr.addEventListener("readystatechange", function () {
+  		if (this.readyState === 4) {
+  			var data = this.responseText;
+  			var jsonResponse = JSON.parse(data);
+
+			console.log(data);
+
+
+  	}
+		});
+
+
+
+</script>
+</body>
+</html> 
