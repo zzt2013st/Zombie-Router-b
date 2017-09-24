@@ -1,0 +1,12 @@
+curl -X POST \
+  https://sms.telnyx.com/send \
+  -H 'accept: application/json' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 4bc7534d-b228-6b92-2bc1-1286705d209e' \
+  -H 'x-profile-secret: qZyxuwJTw44DSy5zhEMnHf18' \
+  -d '{
+  "from": "+17088520725",
+  "to": "+15859444676",
+  "body": "You better be working on the hackathon..."
+}'
